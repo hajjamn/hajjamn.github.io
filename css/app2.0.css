@@ -1,0 +1,240 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+a, button {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* LAYOUT */
+
+.container {
+    max-width: calc(100vw - 20px);
+    margin: 0 auto;
+}
+
+.container-lg {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+/* STYLE */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Italiana', sans-serif;
+}
+
+/* UTILITIES */
+
+.text-align-center {
+    text-align: center;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-33 {
+    width: calc(100% / 3);
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-66 {
+    width: calc(2 * 100% / 3);
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.underlined {
+    border-bottom: 1px solid black;
+}
+
+/* DEBUG */
+
+.debug section, .debug .container, .debug .row, .debug [class^=col] {
+    background-color: lightgray;
+    border: 1px dotted black;
+    padding: 20px;
+}
+
+.debug .container {
+    background-color: lightgreen;
+}
+
+.debug .row {
+    background-color: lightskyblue;
+}
+
+.debug [class^=col] {
+    background-color: salmon;
+    height: 600px;
+}
+
+.debug header [class^=col] {
+    height: auto;
+}
+
+.debug footer [class^=col] {
+    height: auto;
+}
+
+/* HEADER */
+
+header {
+    background-image: url(../img/mare\ 1.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+}
+
+header .container-lg {
+    height: 100vh;
+}
+
+header .row {
+    justify-content: space-between;
+    height: 100%;
+}
+
+header .page-title {
+    max-width: 20%;
+    align-self: center;
+    margin-bottom: 150px;
+}
+
+header .nav {
+    padding-top: 80px;
+    padding-right: 50px;
+    text-align: right;
+    width: 20vw;
+}
+
+header .nav .hidden-menu {
+    display: none;
+    text-decoration: underline;
+}
+
+header .nav .hamburger-menu {
+    margin-left: 5px;
+}
+
+header .nav li {
+    margin: 20px auto;
+}
+
+header .invis {
+    width: 20vw;
+}
+
+/* MAIN */
+
+main section {
+    padding: 100px 0;
+}
+
+main .row {
+    align-items: center;
+    justify-content: center;
+}
+
+main .col-sm {
+    border-top: 1px solid black;
+}
+
+main [class^=col] {
+    margin: 0 20px;
+}
+
+main .col-sm {
+    flex-grow: 1;
+    width: calc(100% / 3 - 100px);
+    margin-left: 20px;
+    text-align: left;
+}
+
+main .col-lg {
+    flex-grow: 2;
+    width: calc(2 * 100% / 3 - 100px);
+    margin: 0 auto;
+}
+
+main .invis {
+    min-width: 60px;
+}
+
+main .col-sm * {
+    padding: 20px 0;
+}
+
+main .col-sm h2 {
+    padding-top: 40px;
+    color: grey;
+}
+
+main .reservation {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+main .underlined {
+    font-style: italic;
+}
+
+main .reservation-container {
+    padding-bottom: 200px;
+}
+
+/* FOOTER */
+
+footer section {
+    padding-bottom: 100px;
+}
+
+footer .row {
+    justify-content: space-around;
+}
+
+footer [class^=col] {
+    margin: 0 20px;
+    max-width: calc(100% / 3 - 150px);
+}
+
+footer .col-33 * {
+    margin: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 100;
+}
